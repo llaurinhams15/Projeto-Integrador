@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recuperação de senha do Sistema Impacto Solidário. Receba um link para redefinir sua senha.">
+    <title>Recuperar Senha - Sistema Impacto Solidário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>RECUPERAR SENHA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre o Projeto</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+            <span class="nav-toggle" aria-label="Abrir menu">☰</span>
+        </nav>
+    </header>
+    <main>
+        <p>Digite seu email cadastrado e enviaremos um link para redefinir sua senha.</p>
+        <form action="enviarlinkredefinicao.html" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required><br><br>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="Seu CPF (opcional)"><br><br>
+
+            <input type="submit" value="Enviar link de redefinição">
+        </form>
+        <p><a href="login.html">Voltar ao Login</a></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sistema Impacto Solidário. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts.java"></script>
+</body>
+</html>

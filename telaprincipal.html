@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PÁGINA PRINCIPAL</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre o Projeto</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="login.html">Logout</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="config.html">Configurações</a></li>
+            </ul>
+            <span class="nav-toggle">☰</span>
+        </nav>
+    </header>
+    <main>
+        <h2>Bem-vindo à Página Principal</h2>
+        <p>Escolha uma das opções no menu para navegar.</p>
+            <h2>Escolha um Projeto</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Projeto 1</h3>
+                    <p>Breve descrição do Projeto 1.</p>
+                    <button onclick="showDetails('Projeto 1', 'Descrição completa do Projeto 1')">Sobre</button>
+                    <button onclick="enroll('Projeto 1')">Inscrever-se</button>
+                </div>
+                <div class="project-item">
+                    <h3>Projeto 2</h3>
+                    <p>Breve descrição do Projeto 2.</p>
+                    <button onclick="showDetails('Projeto 2', 'Descrição completa do Projeto 2')">Sobre</button>
+                    <button onclick="enroll('Projeto 2')">Inscrever-se</button>
+                </div>
+                <!-- Adicione mais projetos conforme necessário -->
+            </div>
+        <script>
+            function showDetails(nome, descricao) {
+                alert("Nome: " + nome + "\n\nDescrição: " + descricao);
+            }
+    
+            function enroll(nome) {
+                alert("Você se inscreveu no " + nome + " com sucesso!");
+                // Aqui você pode adicionar lógica para realmente registrar o usuário no projeto
+            }
+        </script>
+        <button onclick="location.href='novo-projeto.html'">Adicionar Novo Projeto</button>
+        <button onclick="location.href='novo-voluntario.html'">Inscrever Novo Voluntário</button>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Projetos Sociais</p>
+    </footer>
+</body>
+</html>

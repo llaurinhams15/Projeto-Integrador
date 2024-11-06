@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CONFIGURAÇÃO</h1>
+        <nav>
+            <ul>
+                <li><a href="telaprincipal.html">Página Principal</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+            <span class="nav-toggle">☰</span>
+        </nav>
+    </header>
+    <main>
+        <h2>Configurações da Conta</h2>
+        <form>
+            <label for="senha">Alterar Senha:</label><br>
+            <input type="password" id="senha" name="senha" required><br><br>
+            <label for="notificacoes">Preferências de Notificação:</label><br>
+            <select id="notificacoes" name="notificacoes">
+                <option value="email">Email</option>
+                <option value="sms">SMS</option>
+                <option value="none">Nenhuma</option>
+            </select><br><br>
+            <input type="submit" value="Salvar Configurações">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Projetos Sociais</p>
+    </footer>
+</body>
+</html>
